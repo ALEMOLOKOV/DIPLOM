@@ -30,6 +30,9 @@ resource "yandex_compute_instance" "master" {
   metadata = {
     user-data = file("./metadata.yml")
  }
+   scheduling_policy {
+     preemptible = true
+  }
 }
 
 # Создание ВМ WORKER-1
