@@ -27,7 +27,7 @@
 
 ### 3 Тестовое приложение
 
-#### Воспользовался рекомендованным вариантом Dockerfile, nginx сос татичной страницей
+#### Воспользовался рекомендованным вариантом Dockerfile, nginx со статичной страницей, регистри Docker Hub
 
 ![Ссылка на репозиторий](https://github.com/ALEMOLOKOV/diplom-docker.git)
 
@@ -62,6 +62,27 @@
 #### Добавил в кластер namespace app развертывание через helm chart
 
 ![файлы](https://github.com/ALEMOLOKOV/DIPLOM/assets/109212419/49b11d1c-1e91-46bc-befe-4ec1f8e8951c)
+
+#### Helm chart файлы
+![Директория с файлами](https://github.com/ALEMOLOKOV/DIPLOM/tree/18d7f0e799b257cae2754d396dc49746ed1339a8/diplom-chart)
+
+
+### 5 Настройка CI/CD
+
+#### Для астоматической сборки Docker образа использовал CI/CD GitHub Actions
+
+#### ссылка на репозтьлрий с приложением
+
+![Ссылка на репозиторий](https://github.com/ALEMOLOKOV/diplom-docker.git)
+
+#### Скриншоты GitHub Actions
+
+![github actions](https://github.com/ALEMOLOKOV/DIPLOM/assets/109212419/bdebc913-6001-410f-b7f6-f570ae0af708)
+
+#### Docker Hub
+![docker hub](https://github.com/ALEMOLOKOV/DIPLOM/assets/109212419/25d128fb-a81a-4571-9214-3028a5b7c035)
+
+
 
 
 
