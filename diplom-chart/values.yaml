@@ -1,0 +1,30 @@
+# Default values for my-diplom-chart-chart.
+
+replicaCount: 3
+namespace: app
+image:
+  repository: amolokov/diplom
+  pullPolicy: IfNotPresent
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: "myapp"
+
+dataset: dataset-app
+
+deployment:
+  name: deploy-app
+
+service:
+  name: diplom-chart-svc
+  type: NodePort
+  ports:
+    nodePort: 31150
+
+resources:
+   limits:
+     cpu: 100m
+     memory: 128Mi
+   requests:
+     cpu: 100m
+     memory: 128Mi
+
+appPort: 80

@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.deployment.name }}
+  namespace: {{ .Values.namespace }}
+  labels:
+    app: diplom-chart-chart
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: diplom-chart-chart
+  template:
+    metadata:
+      labels:
+        app: diplom-chart-chart
+    spec:
+      containers:
+        - name: {{ .Chart.Name }}
+          env:
+            - name: dateset-name
+              value: {{ .Values.dataset }}
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          ports:
+            - name: http
+              containerPort: {{ .Values.appPort }}
+              protocol: TCP
+          resources: {{- toYaml .Values.resources | nindent 12 }}
