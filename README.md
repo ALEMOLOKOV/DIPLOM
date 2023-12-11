@@ -15,7 +15,7 @@
 
 ### 2 Создание Kubernetes кластера
 
-#### Kubernetes развернут при помощи kubespray, класте состоит из 3 нод
+#### Kubernetes развернут при помощи kubespray, кластер состоит из 3 нод
 
 #### Ansible playbook результат
 
@@ -24,6 +24,50 @@
 #### Статус кластера
 
 ![K8S cluster up](https://github.com/ALEMOLOKOV/DIPLOM/assets/109212419/42870def-d849-4757-bc6f-50ac5ad8261b)
+
+### 3 Тестовое приложение
+
+#### Воспользовался рекомендованным вариантом Dockerfile, nginx сос татичной страницей
+
+![Ссылка на репозиторий](https://github.com/ALEMOLOKOV/diplom-docker.git)
+
+### 4 Система мониторинга и деплой приложения
+
+#### Система мониторинга
+
+#### Воспользовался пакетом kube-prometeuse
+После развертывания в кластере был создан namespace monitoring, добавил NodePort в сервисы
+
+#### Сервисы namespace monitoring
+
+![SVC monitoring](https://github.com/ALEMOLOKOV/DIPLOM/assets/109212419/aa5e0910-0cf4-4f61-a844-c3053ad11286)
+
+#### Првоерка доступности по http к web интерфейсу grafana
+
+![Grafana](https://github.com/ALEMOLOKOV/DIPLOM/assets/109212419/729b2dc8-0f8b-4ef6-a2f8-c0273bc13754)
+
+![Grafana - 1](https://github.com/ALEMOLOKOV/DIPLOM/assets/109212419/a5af84ca-0d47-4215-b311-1a7db4f2b061)
+
+![Grafana - 2](https://github.com/ALEMOLOKOV/DIPLOM/assets/109212419/4f7c0d7d-dc9c-4c25-adbb-049ab187a69e)
+
+#### Prometheus
+![prometheus](https://github.com/ALEMOLOKOV/DIPLOM/assets/109212419/aecb28d7-f22b-4ddf-8dec-f50cb71cc50d)
+
+#### Allert manager
+![allert-manager](https://github.com/ALEMOLOKOV/DIPLOM/assets/109212419/71620298-4926-4c6f-99a8-00f219e61994)
+
+
+### Доступ к приложению
+
+#### Добавил в кластер namespace app развертывание через helm chart
+
+![файлы](https://github.com/ALEMOLOKOV/DIPLOM/assets/109212419/49b11d1c-1e91-46bc-befe-4ec1f8e8951c)
+
+
+
+
+
+
 
 
 
