@@ -12,7 +12,7 @@
 
 ![YC inctances](https://github.com/ALEMOLOKOV/DIPLOM/assets/109212419/ba3b95c0-cea5-491d-8ed2-8abb44697916)
 
-![YC VM](https://github.com/ALEMOLOKOV/DIPLOM/assets/109212419/b6a1bd4e-49ec-4dd5-8645-448fc16758ad)
+![YC VM](https://github.com/ALEMOLOKOV/DIPLOM/assets/109212419/51d2d292-fdf4-40e1-a30e-2ae02caacbcd)
 
 
 ### 2 Создание Kubernetes кластера
