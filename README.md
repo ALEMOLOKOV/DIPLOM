@@ -12,7 +12,7 @@
 
 ![YC inctances](https://github.com/ALEMOLOKOV/DIPLOM/assets/109212419/ba3b95c0-cea5-491d-8ed2-8abb44697916)
 
-![YC VM](https://github.com/ALEMOLOKOV/DIPLOM/assets/109212419/64acacf4-6f49-4837-bb25-802d3d007e8d)
+![YC VM](https://github.com/ALEMOLOKOV/DIPLOM/assets/109212419/61930301-6538-40df-96d4-d35fb3a49287)
 
 
 
